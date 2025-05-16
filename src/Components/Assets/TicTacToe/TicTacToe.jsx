@@ -24,6 +24,85 @@ export function TicTacToe() {
       data[num]="o";
       setCount(++count);
     }
+    checkWin()
+
+}
+
+    const checkWin =() => {
+  if(data[0]===data[1] && data[1]==[2] && data[2]!=="")
+  {
+    won(data);
+  }
+  else if(data[3]===data[4] && data[4]==[5] && data[5]!=="")
+  { 
+     won(data);
+  }
+  else if(data[6]===data[7] && data[7]==[8] && data[8]!=="")
+  { 
+     won(data);
+  }
+  else if(data[0]===data[3] && data[3]==[6] && data[6]!=="")
+  { 
+     won(data);
+  }
+  else if(data[1]===data[4] && data[4]==[7] && data[7]!=="")
+  { 
+     won(data);
+  }
+  else if(data[2]===data[5] && data[5]==[8] && data[8]!=="")
+  { 
+     won(data);
+  }
+  else if(data[0]===data[4] && data[4]==[8] && data[8]!=="")
+  { 
+     won(data);
+  }
+  else if(data[0]===data[1] && data[1]==[2] && data[2]!=="")
+  { 
+     won(data);
+  }
+  else if(data[2]===data[4] && data[4]==[6] && data[6]!=="")
+  { 
+     won(data);
+  }
+// const checkWin =() => {
+//   if(data[0]===data[1] && data[1]===[2] && data[2]!=="")
+//   {
+//     won(data);
+//   }
+//   else if(data[3]===data[4] && data[4]===[5] && data[5]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[6]===data[7] && data[7]===[8] && data[8]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[0]===data[3] && data[3]===[6] && data[6]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[1]===data[4] && data[4]===[7] && data[7]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[2]===data[5] && data[5]===[8] && data[8]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[0]===data[4] && data[4]===[8] && data[8]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[0]===data[1] && data[1]===[2] && data[2]!=="")
+//   { 
+//      won(data);
+//   }
+//   else if(data[2]===data[4] && data[4]===[6] && data[6]!=="")
+//   { 
+//      won(data);
+//   }
+
 }
 
   return (
